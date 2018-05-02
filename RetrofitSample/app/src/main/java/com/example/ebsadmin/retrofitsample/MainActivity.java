@@ -71,9 +71,9 @@ public class MainActivity extends AppCompatActivity {
         //Set time out in Retrofit
         httpClient.connectTimeout(20, TimeUnit.SECONDS).readTimeout(30, TimeUnit.SECONDS).build();
 
-        // Set Base URl of API
+        // Set Base URl of API ---- Replace it from your base url
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("http://stage.rdiapi.drscloud.net/api/")
+                .baseUrl("http://stage.abc.xyz.net/api/")
                 .client(client)
                 .addConverterFactory(JacksonConverterFactory.create())
                 .build();
